@@ -3,26 +3,11 @@
 
 ### 1 장 리액트 시작
 #### 1.1 [왜 리액트인가?](https://rachelslab.tistory.com/99)
-     * 1.1.1 리액트 이해
-#### 1.2 리액트 특징
-     * 1.2.1 Virtual DOM
-     * 1.2.2 기타 특징
-     
+#### 1.2 [리액트 특징](https://rachelslab.tistory.com/99)
+-------------------------------------------
 ### 3장 컴포넌트
-#### 3.2 첫 컴포넌트 생성
-     * 3.2.1 src 디렉터리에 MyComponent.js 파일 생성
-     * 3.2.2 코드 작성하기
-     * 3.2.3 모듈 내보내기 및 불러오기
-#### 3.3 props
-     * 3.3.1 JSX 내부에서 props 렌더링
-     * 3.3.2 컴포넌트를 사용할 때 props 값 지정하기
-     * 3.3.3 props 기본값 설정: defaultProps
-     * 3.3.4 태그 사이의 내용을 보여 주는 children
-     * 3.3.5 비구조화 할당 문법을 통한 props 검증
-     * 3.3.6 propsTypes를 통한 props 검증
-     * 3.3.7 클래스형 컴포넌트에서 props 사용하기
-#### 3.4 state
-     * 3.4.1 클래스형 컴포넌트의 state
-     * 3.4.2 함수 컴포넌트에서 useState 사용하기
-#### 3.5 state를 사용할 때 주의 사항
+#### 3.2 [첫 컴포넌트 생성](https://rachelslab.tistory.com/101)
+#### 3.3 [props](https://rachelslab.tistory.com/101)
+#### 3.4 [state](https://rachelslab.tistory.com/102)
+#### 3.5 [state를 사용할 때 주의 사항](https://rachelslab.tistory.com/102)
 #### 3.6 정리
