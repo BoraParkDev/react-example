@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import MyComponent from "./MyComponent";
 import Say from "./Say";
+import EventPractics from "./EventPractics";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -21,12 +22,13 @@ const App = () => {
       <h1>Vite + React</h1>
       <MyComponent name="Rachel!">리액트를 공부해봅시다</MyComponent>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <EventPractics />
+        {/* <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        </p> */}
       </div>
       <Say />
     </div>
