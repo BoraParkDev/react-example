@@ -1,54 +1,47 @@
 import React, { useState } from "react";
 
 type Props = {};
-
+type UserType = {
+  nickname: string;
+  email: string;
+};
 const EventPractics: React.FC<Props> = ({ ...props }) => {
-  const [nickname, setNickname] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+  const [user, setUser] = useState<UserType>({ nickname: "", email: "" });
+  const { nickname, email } = user;
 
-  const handleChangeNickName = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    if (name === "nickname") {
-      setNickname(value);
-    }
+    setUser((prev) => {
+      return {
+        ...prev,
+        [name]: value,
+      };
+    });
   };
 
-  const handleChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    if (name === "email") {
-      setEmail(value);
-    }
-  };
-
-  const handleClick = () => {
+  const handleSubmit = () => {
     alert(nickname + " " + email);
   };
 
-  const onKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      handleClick();
-    }
-  };
-
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <h1>정보를 입력해주세요</h1>
       <input
         type="text"
         placeholder="닉네임"
         name="nickname"
         value={nickname}
-        onChange={handleChangeNickName}
+        onChange={handleChange}
       />
       <input
         type="email"
         placeholder="이메일"
         name="email"
         value={email}
-        onChange={handleChangeEmail}
+        onChange={handleChange}
       />
-      <button onClick={handleClick}>확인</button>
-    </div>
+      <button type="submit">확인</button>
+    </form>
   );
 };
 
