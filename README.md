@@ -25,7 +25,7 @@
 
 ### 5장 ref: DOM에 이름달기
    5.1 [ref는 어떤 상황에서 사용해야 할까?](https://rachelslab.tistory.com/113)<br/>
-   5.2 ref 사용<br/>
+   5.2 [ref 사용](https://github.com/BoraParkDev/react-example/blob/main/src/StopWatch.tsx)<br/>
    5.3 컴포넌트에 ref 달기<br/>
    5.4 정리<br/>
 #
