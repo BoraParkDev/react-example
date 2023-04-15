@@ -2,10 +2,11 @@ import React from "react";
 
 type PropType = { name: string; isPacked: boolean };
 const Item = ({ name, isPacked }: PropType) => {
-  if (isPacked) {
-    return <li className="item">{name} ✔️</li>;
-  }
-  return <li className="item">{name}</li>;
+  return (
+    <li className="item">
+      {name} {isPacked ? "✔️" : null}
+    </li>
+  );
 };
 const Condition = () => {
   return (
