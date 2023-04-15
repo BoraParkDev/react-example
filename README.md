@@ -22,3 +22,10 @@
    4.3 [함수 컴포넌트로 구현해 보기](https://github.com/BoraParkDev/react-example/blob/main/src/EventPractics.tsx)<br/>
    4.4 정리
 #
+
+### 5장 ref: DOM에 이름달기
+   5.1 [ref는 어떤 상황에서 사용해야 할까?](https://rachelslab.tistory.com/113)
+   5.2 ref 사용
+   5.3 컴포넌트에 ref 달기
+   5.4 정리
+#
