@@ -4,8 +4,8 @@ import EventPractics from "./EventPractics";
 import Condition from "./Condition";
 import Say from "./Say";
 import App from "./App";
-import StopWatch from "./StopWatch";
-import Chat from "./Chat";
+import StopWatch from "./ref/StopWatch";
+import Chat from "./ref/Chat";
 
 const Router = () => {
   return (
