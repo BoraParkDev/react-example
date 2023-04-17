@@ -5,6 +5,7 @@ import Condition from "./Condition";
 import Say from "./Say";
 import App from "./App";
 import StopWatch from "./StopWatch";
+import Chat from "./Chat";
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
       <Route path="/say" element={<Say />} />
       <Route path="/condition" element={<Condition />} />
       <Route path="/stopwatch" element={<StopWatch />} />
+      <Route path="/chat" element={<Chat />} />
     </Routes>
   );
 };
