@@ -6,6 +6,9 @@ import Say from "./Say";
 import App from "./App";
 import StopWatch from "./ref/StopWatch";
 import Chat from "./ref/Chat";
+import Ref from "./ref/Ref";
+import ToggleButton from "./ref/ToggleButton";
+import IterationSample from "./IterationSample";
 
 const Router = () => {
   return (
@@ -14,8 +17,12 @@ const Router = () => {
       <Route path="/paractice" element={<EventPractics />} />
       <Route path="/say" element={<Say />} />
       <Route path="/condition" element={<Condition />} />
-      <Route path="/stopwatch" element={<StopWatch />} />
-      <Route path="/chat" element={<Chat />} />
+      <Route path="/ref" element={<Ref />}>
+        <Route path="stopwatch" element={<StopWatch />} />
+        <Route path="chat" element={<Chat />} />
+        <Route path="toggle" element={<ToggleButton />} />
+      </Route>
+      <Route path="/sample" element={<IterationSample />} />
     </Routes>
   );
 };
