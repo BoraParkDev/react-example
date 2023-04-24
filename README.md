@@ -29,3 +29,8 @@
    5.3 컴포넌트에 ref 달기<br/>
    5.4 정리<br/>
 #
+
+### 6장 컴포넌트 반복
+   6.1 [자바스크립트 배열의 map()함수](https://github.com/BoraParkDev/react-example/blob/main/src/IterationSample.tsx)<br/>
+   6.4 정리<br/>
+#
