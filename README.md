@@ -32,5 +32,15 @@
 
 ### 6장 컴포넌트 반복
    6.1 [자바스크립트 배열의 map()함수](https://github.com/BoraParkDev/react-example/blob/main/src/IterationSample.tsx)<br/>
-   6.4 정리<br/>
+   6.2 데이터 배열을 컴포넌트 배열로 변환하기<br/>
+   6.3 key<br/>
+   6.4 응용<br/>
+   6.5 정리<br/>
+#
+
+### 7장 컴포넌트의 라이프사이클 메서드
+   7.1 라이프사이클 메서드의 이해<br/>
+   7.2 라이프사이클 메서드 살펴보기<br/>
+   7.3 라이프사이클 메서드 사용하기<br/>
+   7.4 정리<br/>
 #
