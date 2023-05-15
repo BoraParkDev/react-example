@@ -41,18 +41,18 @@
 ### 7장 컴포넌트의 라이프사이클 메서드
    7.1 [라이프사이클 메서드의 이해](https://rachelslab.tistory.com/120)<br/>
    7.2 라이프사이클 메서드 살펴보기<br/>
-   7.3 라이프사이클 메서드 사용하기<br/>
+   7.3 [라이프사이클 메서드 사용하기](https://github.com/BoraParkDev/react-example/blob/main/src/classes/LifeCycleSample.tsx)<br/>
    7.4 정리<br/>
 #
 
 ### 8장 Hooks
-   8.1 useState
-   8.2 useEffect
-   8.3 useReducer
-   8.4 useMemo
-   8.5 useCallback
-   8.6 useRef
-   8.7 커스텀 hooks 만들기
-   8.8 다른 hooks
+   8.1 useState<br/>
+   8.2 useEffect<br/>
+   8.3 useReducer<br/>
+   8.4 useMemo<br/>
+   8.5 useCallback<br/>
+   8.6 useRef<br/>
+   8.7 커스텀 hooks 만들기<br/>
+   8.8 다른 hooks<br/>
    8.9 정리<br/>
 #
