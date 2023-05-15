@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import EventPractics from "./EventPractics";
 import Condition from "./Condition";
 import Say from "./Say";
-import App from "./App";
+import App from "./App_";
 import StopWatch from "./ref/StopWatch";
 import Chat from "./ref/Chat";
 import Ref from "./ref/Ref";
