@@ -29,3 +29,30 @@
    5.3 컴포넌트에 ref 달기<br/>
    5.4 정리<br/>
 #
+
+### 6장 컴포넌트 반복
+   6.1 [자바스크립트 배열의 map()함수](https://github.com/BoraParkDev/react-example/blob/main/src/IterationSample.tsx)<br/>
+   6.2 데이터 배열을 컴포넌트 배열로 변환하기<br/>
+   6.3 key<br/>
+   6.4 응용<br/>
+   6.5 정리<br/>
+#
+
+### 7장 컴포넌트의 라이프사이클 메서드
+   7.1 [라이프사이클 메서드의 이해](https://rachelslab.tistory.com/120)<br/>
+   7.2 라이프사이클 메서드 살펴보기<br/>
+   7.3 라이프사이클 메서드 사용하기<br/>
+   7.4 정리<br/>
+#
+
+### 8장 Hooks
+   8.1 useState
+   8.2 useEffect
+   8.3 useReducer
+   8.4 useMemo
+   8.5 useCallback
+   8.6 useRef
+   8.7 커스텀 hooks 만들기
+   8.8 다른 hooks
+   8.9 정리<br/>
+#
