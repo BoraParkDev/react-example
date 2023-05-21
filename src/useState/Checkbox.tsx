@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 
 const Checkbox = () => {
   const [isChecked, setIsChecked] = useState(true);
-  const onClick = () => {
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setIsChecked(!isChecked);
   };
+
   return (
     <div>
       <input
         type="checkbox"
         checked={isChecked}
         value="나 이거 좋아!"
-        onClick={onClick}
+        onChange={onChange}
       />
       <p>
         {isChecked

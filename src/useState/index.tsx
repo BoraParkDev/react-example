@@ -2,13 +2,15 @@ import React from "react";
 import Counter from "./Counter";
 import TextFields from "./TextFields";
 import Checkbox from "./Checkbox";
+import Form from "./Form";
 
 const UseStateExample = () => {
   return (
     <div>
-      <Counter />
+      {/* <Counter />
       <TextFields />
-      <Checkbox />
+      <Checkbox /> */}
+      <Form />
     </div>
   );
 };
