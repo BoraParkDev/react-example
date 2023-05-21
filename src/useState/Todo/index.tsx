@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import AddTodo from "./AddTodo";
 import TaskList from "./TaskList";
 
@@ -21,10 +21,18 @@ const Todo = () => {
     ]);
   };
 
+  const updateTodoList = (e: ChangeEvent<HTMLInputElement>, index: number) => {
+    setTodoList((prev) => {
+      let newTodoList = prev.filter((_, idx) => idx !== index);
+      newTodoList.concat({ id: index, text: e.target.value });
+      return newTodoList;
+    });
+  };
+
   return (
     <div>
       <AddTodo addTodoList={addTodoList} />
-      <TaskList todoList={todoList} />
+      <TaskList todoList={todoList} updateTodoList={updateTodoList} />
     </div>
   );
 };
