@@ -4,6 +4,7 @@ import TextFields from "./TextFields";
 import Checkbox from "./Checkbox";
 import Form from "./Form";
 import Example1 from "./prevState/Example1";
+import ObjectIndex from "./Object";
 
 const UseStateExample = () => {
   return (
@@ -12,7 +13,8 @@ const UseStateExample = () => {
       <TextFields />
       <Checkbox /> */}
       {/* <Form /> */}
-      <Example1 />
+      {/* <Example1 /> */}
+      <ObjectIndex />
     </div>
   );
 };
