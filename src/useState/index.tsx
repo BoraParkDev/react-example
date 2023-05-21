@@ -5,6 +5,7 @@ import Checkbox from "./Checkbox";
 import Form from "./Form";
 import Example1 from "./prevState/Example1";
 import ObjectIndex from "./Object";
+import Nested from "./Object/Nested";
 
 const UseStateExample = () => {
   return (
@@ -14,7 +15,8 @@ const UseStateExample = () => {
       <Checkbox /> */}
       {/* <Form /> */}
       {/* <Example1 /> */}
-      <ObjectIndex />
+      {/* <ObjectIndex /> */}
+      <Nested />
     </div>
   );
 };
