@@ -34,7 +34,7 @@
    6.1 [자바스크립트 배열의 map()함수](https://github.com/BoraParkDev/react-example/blob/main/src/IterationSample.tsx)<br/>
    6.2 데이터 배열을 컴포넌트 배열로 변환하기<br/>
    6.3 key<br/>
-   6.4 [응용]<br/>(https://rachelslab.tistory.com/128)
+   6.4 [응용](https://rachelslab.tistory.com/128)<br/>
    6.5 정리<br/>
 #
 
