@@ -3,14 +3,11 @@ import { ListType } from ".";
 
 export type TaskListProps = {
   todoList: ListType[];
-  deleteTodoList: (e: ChangeEvent<HTMLInputElement>, index: number) => void;
+  deleteTodoList: (index: number) => void;
 };
 
 const TaskList = ({ ...props }: TaskListProps) => {
-  const [updateClicked, setUpdateClicked] = useState(false);
-  const [deleteClicked, setDeleteClicked] = useState(false);
   const { todoList, deleteTodoList } = props;
-  console.log(todoList);
 
   return (
     <ul>
@@ -26,24 +23,18 @@ const TaskList = ({ ...props }: TaskListProps) => {
             }}
           >
             <input type="checkbox" />
-            {updateClicked ? (
-              <label>
-                <input
-                  type="text"
-                  value={list.text}
-                  onChange={(e) => deleteTodoList(e, idx)}
-                />
-              </label>
-            ) : (
-              <span>{list.text}</span>
-            )}
+            <label>
+              <input
+                type="text"
+                value={list.text}
+                onChange={(e) => console.log(e)}
+              />
+            </label>
             <div>
-              <button onClick={() => setUpdateClicked(!updateClicked)}>
-                수정하기
-              </button>
+              <button onClick={() => console.log(idx)}>수정하기</button>
               <button
                 style={{ marginLeft: 10 }}
-                onClick={() => setDeleteClicked(!deleteClicked)}
+                onClick={() => deleteTodoList(idx)}
               >
                 삭제하기
               </button>

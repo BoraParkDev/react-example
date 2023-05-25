@@ -21,10 +21,12 @@ const Todo = () => {
     ]);
   };
 
-  const deleteTodoList = (e: ChangeEvent<HTMLInputElement>, index: number) => {
+  const deleteTodoList = (index: number) => {
     setTodoList((prev) => {
       let newTodoList = prev.filter((_, idx) => idx !== index);
-      newTodoList.concat({ id: index, text: e.target.value });
+      console.log(newTodoList);
+      // newTodoList.concat({ id: index, text: e.target.value });
+
       return newTodoList;
     });
   };
