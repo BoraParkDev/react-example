@@ -21,7 +21,7 @@ const Todo = () => {
     ]);
   };
 
-  const updateTodoList = (e: ChangeEvent<HTMLInputElement>, index: number) => {
+  const deleteTodoList = (e: ChangeEvent<HTMLInputElement>, index: number) => {
     setTodoList((prev) => {
       let newTodoList = prev.filter((_, idx) => idx !== index);
       newTodoList.concat({ id: index, text: e.target.value });
@@ -32,7 +32,7 @@ const Todo = () => {
   return (
     <div>
       <AddTodo addTodoList={addTodoList} />
-      <TaskList todoList={todoList} updateTodoList={updateTodoList} />
+      <TaskList todoList={todoList} deleteTodoList={deleteTodoList} />
     </div>
   );
 };

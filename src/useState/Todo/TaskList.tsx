@@ -3,12 +3,13 @@ import { ListType } from ".";
 
 export type TaskListProps = {
   todoList: ListType[];
-  updateTodoList: (e: ChangeEvent<HTMLInputElement>, index: number) => void;
+  deleteTodoList: (e: ChangeEvent<HTMLInputElement>, index: number) => void;
 };
 
 const TaskList = ({ ...props }: TaskListProps) => {
   const [updateClicked, setUpdateClicked] = useState(false);
-  const { todoList, updateTodoList } = props;
+  const [deleteClicked, setDeleteClicked] = useState(false);
+  const { todoList, deleteTodoList } = props;
   console.log(todoList);
 
   return (
@@ -30,7 +31,7 @@ const TaskList = ({ ...props }: TaskListProps) => {
                 <input
                   type="text"
                   value={list.text}
-                  onChange={(e) => updateTodoList(e, idx)}
+                  onChange={(e) => deleteTodoList(e, idx)}
                 />
               </label>
             ) : (
@@ -40,7 +41,12 @@ const TaskList = ({ ...props }: TaskListProps) => {
               <button onClick={() => setUpdateClicked(!updateClicked)}>
                 수정하기
               </button>
-              <button style={{ marginLeft: 10 }}>삭제하기</button>
+              <button
+                style={{ marginLeft: 10 }}
+                onClick={() => setDeleteClicked(!deleteClicked)}
+              >
+                삭제하기
+              </button>
             </div>
           </li>
         );
