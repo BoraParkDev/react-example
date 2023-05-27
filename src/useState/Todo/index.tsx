@@ -31,7 +31,7 @@ const Todo = () => {
         return [...prev];
       });
     },
-    []
+    [todoList]
   );
 
   const updateTodoList = (index: number) => {

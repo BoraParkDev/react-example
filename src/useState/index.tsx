@@ -7,6 +7,7 @@ import Example1 from "./prevState/Example1";
 import ObjectIndex from "./Object";
 import Nested from "./Object/Nested";
 import Todo from "./Todo";
+import BucketList from "./BucketList";
 
 const UseStateExample = () => {
   return (
@@ -18,7 +19,8 @@ const UseStateExample = () => {
       {/* <Example1 /> */}
       {/* <ObjectIndex /> */}
       {/* <Nested /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <BucketList />
     </div>
   );
 };
