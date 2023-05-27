@@ -1,17 +1,18 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useCallback, useState } from "react";
 import AddTodo from "./AddTodo";
 import TaskList from "./TaskList";
 
 export type ListType = {
   id: number;
   text?: string;
+  updated?: boolean;
 };
 
 const Todo = () => {
   const [todoList, setTodoList] = useState<ListType[]>([
-    { id: 1, text: "우유 사기" },
-    { id: 2, text: "저녁 식사 준비하기" },
-    { id: 3, text: "태연 노래 듣기" },
+    { id: 0, text: "우유 사기", updated: false },
+    { id: 1, text: "저녁 식사 준비하기", updated: false },
+    { id: 2, text: "태연 노래 듣기", updated: false },
   ]);
 
   const addTodoList = (inputText: string) => {
@@ -21,20 +22,45 @@ const Todo = () => {
     ]);
   };
 
-  const deleteTodoList = (index: number) => {
-    setTodoList((prev) => {
-      let newTodoList = prev.filter((_, idx) => idx !== index);
-      console.log(newTodoList);
-      // newTodoList.concat({ id: index, text: e.target.value });
+  const updateText = useCallback(
+    (e: ChangeEvent<HTMLInputElement>, index: number) => {
+      setTodoList((prev) => {
+        let indexTodoList = prev[index];
+        indexTodoList.text = e.target.value;
+        console.log(...prev);
+        return [...prev];
+      });
+    },
+    []
+  );
 
-      return newTodoList;
+  const updateTodoList = (index: number) => {
+    setTodoList((prev) => {
+      let indexTodoList = prev[index];
+      indexTodoList.updated = !indexTodoList.updated;
+      return [...prev];
     });
   };
+
+  const deleteTodoList = useCallback(
+    (index: number) => {
+      setTodoList((prev) => {
+        let newTodoList = prev.filter((_, idx) => idx !== index);
+        return newTodoList;
+      });
+    },
+    [todoList]
+  );
 
   return (
     <div>
       <AddTodo addTodoList={addTodoList} />
-      <TaskList todoList={todoList} deleteTodoList={deleteTodoList} />
+      <TaskList
+        todoList={todoList}
+        updateText={updateText}
+        updateTodoList={updateTodoList}
+        deleteTodoList={deleteTodoList}
+      />
     </div>
   );
 };
